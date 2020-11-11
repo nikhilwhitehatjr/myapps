@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <div class="container">
     <h1>Apps</h1>
     <div class="line"></div>
     <section id="apps">
@@ -23,14 +27,31 @@
     </section>
     <h1>Games</h1>
     <div class="line"></div>
-    <section id="Games">
-        <a href="https://studio.code.org/projects/artist/UOAQN0UBVW1x2TfFLtJdx2z8Z6OBKMZGmmykgxMSGKI" target="_blank">
-            <img src="rainbow.png">
-        </a>
-        <a href="https://studio.code.org/projects/artist/jOgfHEOmry-lhM6Qs-crg-SSYZqF7-xaqDP39WKbDWk" target="_blank">
-            <img src="colours.png">
-        </a>
-    </section>
+        <div class="carousel slide" id="mycarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center><a href="https://studio.code.org/projects/artist/UOAQN0UBVW1x2TfFLtJdx2z8Z6OBKMZGmmykgxMSGKI" target="_blank">
+                        <img src="rainbow.png" class="img-responsive">
+                    </a>
+                    <div class="carousel-content">
+                        <p>Rainbow drawing</p>
+                    </div></center>
+                    
+                </div>
+                <div class="item">
+                    <center><a href="https://studio.code.org/projects/artist/jOgfHEOmry-lhM6Qs-crg-SSYZqF7-xaqDP39WKbDWk" target="_blank">
+                        <img src="colours.png" class="img-responsive">
+                    </a>
+                    <div class="carousel-content">
+                        <p>Different shades of rgb</p>
+                    </div></center>
+                    
+                </div>
+            </div>
+            <a class="left carousel-control" href="#mycarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#mycarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        </div>
 </body>
 
 </html>
